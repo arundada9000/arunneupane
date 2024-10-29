@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Neupane | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+        <a href="#intro">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro">
+        <div class="intro-content">
+            <img src="./images/me-in-pool.jpg" alt="Arun Neupane" class="profile-photo">
+            <h1>Hey, I'm Arun Neupane</h1>
+            <p>Your go-to developer for turning concepts into powerful, beautiful web experiences.</p>
+            <span class="subtitle">"Creating seamless solutions for complex ideas."</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>I’m passionate about web development, always seeking to push the boundaries of what's possible.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1 class="projects-title">Projects</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <iframe src="https://easysorting.netlify.app" title="Project 1"></iframe>
+                <div class="overlay">
+                    <a href="https://easysorting.netlify.app" target="_blank" rel="noopener">Visit Site</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <iframe src="https://allunitconverter.netlify.app" title="Project 1"></iframe>
+                <div class="overlay">
+                    <a href="https://allunitconverter.netlify.app" target="_blank" rel="noopener">Visit Site</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <iframe src="https://easyqrcreate.netlify.app" title="Project 2"></iframe>
+                <div class="overlay">
+                    <a href="https://easyqrcreate.netlify.app" target="_blank" rel="noopener">Visit Site</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1 class="contact-title">Contact Me</h1>
+        <form action="mailto:arunneupane0000@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector("nav").classList.toggle("active");
+            document.querySelector(".menu-toggle").classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

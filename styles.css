@@ -3,10 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
+  font-family: "roboto", "Arial", sans-serif;
+}
+html,
+body {
   scroll-behavior: smooth;
 }
-
 /* Body and Nav Styling */
 body {
   background: linear-gradient(135deg, #2a2a2e, #3d405b);

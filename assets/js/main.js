@@ -202,3 +202,28 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const timeoutDuration = 4000;
+
+  setTimeout(() => {
+    const preloader = document.getElementById("preloader");
+    if (preloader) {
+      preloader.style.transition = "opacity 0.5s";
+      preloader.style.opacity = "0";
+      setTimeout(() => {
+        preloader.remove();
+      }, 4000);
+    }
+  }, timeoutDuration);
+
+  const paths = document.querySelectorAll(".draw");
+
+  paths.forEach((path) => {
+    const length = path.getTotalLength();
+    path.style.strokeDasharray = length;
+    path.style.strokeDashoffset = length;
+
+    path.style.animation = "draw 4s ease forwards";
+  });
+});

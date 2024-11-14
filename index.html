@@ -10,6 +10,7 @@
   <meta name="keywords"
     content="arun, arun neupane, arundada9000, arun dada, arun from nepal , nepali arun , arun from parbat, arun arun, arunneupane20, portfolio, arun neupane portfolio, arun neupane contact page, arun neupane csit, hacker arun, arun pooja, pooja pandey, arun loves pooja, arun and pooja , pooju" />
 
+  <link rel="shortcut icon" href="./assets/img/file.png" type="image/x-icon">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -892,7 +893,7 @@ c33 -19 68 -70 68 -99 0 -11 9 -28 19 -37 11 -10 24 -30 31 -46 7 -16 18 -31
         <div class="swiper-wrapper">
           <!-- portfolio 1 -->
           <div class="portfolio__content grid swiper-slide">
-            <img src="assets/img/portfolio0.jpg" alt="EasySorting" class="portfolio__img" />
+            <img src="assets/img/portfolio0.png" alt="EasySorting" class="portfolio__img" />
             <div class="portfolio__data">
               <h3 class="portfolio__title">Easy sorting</h3>
               <p class="portfolio__description">
@@ -913,7 +914,7 @@ c33 -19 68 -70 68 -99 0 -11 9 -28 19 -37 11 -10 24 -30 31 -46 7 -16 18 -31
           </div>
           <!-- portfolio 2 -->
           <div class="portfolio__content grid swiper-slide">
-            <img src="assets/img/portfolio1.jpg" alt="unit converter" class="portfolio__img" />
+            <img src="assets/img/portfolio1.png" alt="unit converter" class="portfolio__img" />
             <div class="portfolio__data">
               <h3 class="portfolio__title">Unit Converter</h3>
               <p class="portfolio__description">
@@ -955,7 +956,7 @@ c33 -19 68 -70 68 -99 0 -11 9 -28 19 -37 11 -10 24 -30 31 -46 7 -16 18 -31
 
           <!-- portfolio 4 -->
           <div class="portfolio__content grid swiper-slide">
-            <img src="assets/img/portfolio3.jpg" alt="Random Number generator" class="portfolio__img" />
+            <img src="assets/img/portfolio3.png" alt="Random Number generator" class="portfolio__img" />
             <div class="portfolio__data">
               <h3 class="portfolio__title">Random Number Generator</h3>
               <p class="portfolio__description">
@@ -973,6 +974,29 @@ c33 -19 68 -70 68 -99 0 -11 9 -28 19 -37 11 -10 24 -30 31 -46 7 -16 18 -31
               </a>
             </div>
           </div>
+
+          <!-- Portfolio 5 -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/portfolio4.png" alt="Random Number generator" class="portfolio__img" />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Stack Visualization</h3>
+              <p class="portfolio__description">
+                Step by step visualization of Stack Data Structure for better understanding with code implementation
+                available.
+              </p>
+              <a href="https://easystack.netlify.app" rel="noopener" target="_blank"
+                class="button button--flex button--small portfolio__button">
+                Live
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+              <a href="https://github.com/arundada9000/stack" rel="noopener" target="_blank"
+                class="button button--flex button--small portfolio__button">
+                Code
+                <i class="uil uil-github button__icon"></i>
+              </a>
+            </div>
+          </div>
+
         </div>
 
         <div class="swiper-button-next">
@@ -1130,24 +1154,29 @@ c33 -19 68 -70 68 -99 0 -11 9 -28 19 -37 11 -10 24 -30 31 -46 7 -16 18 -31
           </div>
         </div>
 
-        <form action="mailto:arunneupane0000@gmail.com" class="contact__form grid">
+        <form action="https://api.web3forms.com/submit" method="post" class="contact__form grid">
+
+          <input type="hidden" name="access_key" value="a70b99ba-e904-480f-9f8b-e420787fbc0d">
+
+
           <div class="contact__inputs grid">
             <div class="contact__content">
-              <label for="" class="contact__label">Name</label>
-              <input type="text" class="contact__input" />
+              <label for="User-name" class="contact__label">Name</label>
+              <input type="text" class="contact__input" name="User-name" id="User-name" />
             </div>
             <div class="contact__content">
-              <label for="" class="contact__label">Email</label>
-              <input type="email" class="contact__input" />
+              <label for="User-email" class="contact__label">Email</label>
+              <input type="email" class="contact__input" name="User-email" id="User-email" />
             </div>
           </div>
           <div class="contact__content">
-            <label for="" class="contact__label">Subject matter</label>
-            <input type="text" class="contact__input" />
+            <label for="User-contact" class="contact__label">Subject matter</label>
+            <input type="text" class="contact__input" name="User-contact" id="User-contact" />
           </div>
           <div class="contact__content">
             <label for="" class="contact__label">Message</label>
-            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+            <textarea name="User-message" id="User-message" cols="0" rows="7" class="contact__input"
+              title="Type your message please" required></textarea>
           </div>
 
           <div>

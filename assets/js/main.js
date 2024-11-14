@@ -227,3 +227,29 @@ document.addEventListener("DOMContentLoaded", function () {
     path.style.animation = "draw 4s ease forwards";
   });
 });
+
+// Form submission
+const form = document.querySelector("form");
+const submitButton = form.querySelector('input[type="submit"]');
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const formData = new FormData(form);
+
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => {
+      if (response.ok) {
+        alert("Thank you for your message");
+        form.reset();
+      } else {
+        alert("Error occurred, Please try again !");
+      }
+    })
+    .catch((error) => {
+      console.error("Error submitting form:", error);
+    });
+});

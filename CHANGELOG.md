@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 - Added `.gitignore` so editor-local config (`.claude/`, `.vs/`, `.vscode/`) stays out of the repo
 - "Stay & Browse" modal button was unstyled — `.button` now resets native button defaults (`border`, `font-family`, `cursor`), fixing all `<button>` elements
 - Removed now-redundant inline `border`/`cursor` styles on the contact submit button
+- Contact form Name, Email, and Subject inputs now `required`, preventing submissions with only a message
 
 ## [2.0.0] - 2026-09-11
 

@@ -226,6 +226,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
     path.style.animation = "draw 4s ease forwards";
   });
+
+  // Old portfolio notice modal
+  const oldPortfolioModal = document.getElementById("old-portfolio-modal");
+  const oldPortfolioDismiss = document.getElementById("old-portfolio-dismiss");
+  const oldPortfolioOverlay = document.getElementById("old-portfolio-overlay");
+
+  if (oldPortfolioModal) {
+    // Show modal after preloader finishes
+    setTimeout(() => {
+      oldPortfolioModal.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }, timeoutDuration + 1200);
+
+    function dismissModal() {
+      oldPortfolioModal.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+
+    if (oldPortfolioDismiss) {
+      oldPortfolioDismiss.addEventListener("click", dismissModal);
+    }
+    if (oldPortfolioOverlay) {
+      oldPortfolioOverlay.addEventListener("click", dismissModal);
+    }
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && oldPortfolioModal.classList.contains("active")) {
+        dismissModal();
+      }
+    });
+  }
 });
 
 // Form submission
@@ -236,6 +267,7 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   const formData = new FormData(form);
+  formData.append("domain", window.location.origin);
 
   fetch("https://api.web3forms.com/submit", {
     method: "POST",

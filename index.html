@@ -7,16 +7,68 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Wanna hire a web designer ? It's me Arun neupane, take a tour of my  personal website, my projects, accomplishments, hardships and more " />
-
+    content="Arun Neupane — web developer and programmer from Nepal. Explore my older portfolio with projects, skills, and contact info. Visit my latest portfolio at arunneupane.vercel.app." />
   <meta name="keywords"
-    content="arun, arun neupane, arundada9000, arun dada, arun from nepal , nepali arun , arun from parbat, arun arun, arunneupane20, portfolio, arun neupane portfolio, arun neupane contact page, arun neupane csit, hacker arun, arun pooja, pooja pandey, arun loves pooja, arun and pooja , pooju" />
+    content="arun neupane, arundada9000, arun dada, arun from nepal, nepali developer, arun from parbat, portfolio, web developer nepal, frontend developer, javascript developer, programmer nepal, arunneupane20" />
+  <meta name="author" content="Arun Neupane" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://arunneupane.netlify.app/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://arunneupane.netlify.app/" />
+  <meta property="og:title" content="Arun Neupane | Portfolio (Archived)" />
+  <meta property="og:description" content="This is my archived portfolio. Visit my latest work at arunneupane.vercel.app — projects, skills, and more." />
+  <meta property="og:image" content="https://arunneupane.netlify.app/assets/img/perfil.png" />
+  <meta property="og:site_name" content="Arun Neupane Portfolio" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://arunneupane.netlify.app/" />
+  <meta name="twitter:title" content="Arun Neupane | Portfolio (Archived)" />
+  <meta name="twitter:description" content="This is my archived portfolio. Visit my latest work at arunneupane.vercel.app — projects, skills, and more." />
+  <meta name="twitter:image" content="https://arunneupane.netlify.app/assets/img/perfil.png" />
+  <meta name="twitter:creator" content="@arundada9000" />
 
   <link rel="shortcut icon" href="./assets/img/file.png" type="image/x-icon">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
-  <title>Arun Neupane | Portfolio</title>
+  <title>Arun Neupane | Portfolio (Archived) — Visit Current Portfolio</title>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arun Neupane",
+    "alternateName": ["arundada9000", "arun dada"],
+    "url": "https://arunneupane.vercel.app",
+    "image": "https://arunneupane.netlify.app/assets/img/perfil.png",
+    "jobTitle": "Web Developer & Programmer",
+    "description": "Web developer and programmer from Nepal. Specializing in frontend development with JavaScript, React, HTML, and CSS.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Parbat",
+      "addressCountry": "Nepal"
+    },
+    "email": "arunneupane0000@gmail.com",
+    "sameAs": [
+      "https://github.com/arundada9000",
+      "https://www.instagram.com/arundada9000/",
+      "https://www.facebook.com/arundada9000",
+      "https://www.linkedin.com/in/arundada9000/",
+      "https://x.com/arundada9000",
+      "https://www.youtube.com/@arundada9000"
+    ],
+    "knowsAbout": ["JavaScript", "React", "HTML", "CSS", "Python", "C++", "Frontend Development", "Web Development"],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "BSc. CSIT, Nepal"
+    }
+  }
+  </script>
 </head>
 
 <body>
@@ -300,6 +352,28 @@ c33 -19 68 -70 68 -99 0 -11 9 -28 19 -37 11 -10 24 -30 31 -46 7 -16 18 -31
       </g>
     </svg>
   </div>
+  <!-- old portfolio notice modal -->
+  <div class="old-portfolio-modal" id="old-portfolio-modal">
+    <div class="old-portfolio-modal__overlay" id="old-portfolio-overlay"></div>
+    <div class="old-portfolio-modal__content">
+      <span class="old-portfolio-modal__badge">Archived</span>
+      <h3 class="old-portfolio-modal__title">This is an older version of my portfolio</h3>
+      <p class="old-portfolio-modal__text">
+        You're browsing my earlier work. For my latest projects and updated profile, check out my current portfolio.
+      </p>
+      <div class="old-portfolio-modal__actions">
+        <a href="https://arunneupane.vercel.app" class="button button--flex old-portfolio-modal__btn-primary">
+          Visit Current Portfolio
+          <i class="uil uil-arrow-right button__icon"></i>
+        </a>
+        <button class="button button--flex button--link old-portfolio-modal__btn-dismiss" id="old-portfolio-dismiss">
+          Stay & Browse
+          <i class="uil uil-arrow-down button__icon"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- header -->
   <header class="header" id="header">
     <nav class="nav container">
@@ -337,6 +411,11 @@ c33 -19 68 -70 68 -99 0 -11 9 -28 19 -37 11 -10 24 -30 31 -46 7 -16 18 -31
               <i class="uil uil-message nav__icon"></i> Contact
             </a>
           </li>
+          <li class="nav__item">
+            <a href="https://arunneupane.vercel.app" target="_blank" rel="noopener" class="nav__link nav__link--current">
+              <i class="uil uil-external-link-alt nav__icon"></i> Current Portfolio
+            </a>
+          </li>
         </ul>
         <i class="uil uil-times nav__close" id="nav-close"></i>
       </div>
@@ -358,12 +437,21 @@ c33 -19 68 -70 68 -99 0 -11 9 -28 19 -37 11 -10 24 -30 31 -46 7 -16 18 -31
       <div class="home__container container grid">
         <div class="home__content grid">
           <div class="home__social">
-            <a href="https://www.facebook.com/arunneupane9000/" target="_blank" rel="noopener"
+            <a href="https://www.facebook.com/arundada9000/" target="_blank" rel="noopener"
               class="home__social-icon">
               <i class="uil uil-facebook"></i>
             </a>
             <a href="https://www.instagram.com/arundada9000/" target="_blank" rel="noopener" class="home__social-icon">
               <i class="uil uil-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/arundada9000/" target="_blank" rel="noopener" class="home__social-icon">
+              <i class="uil uil-linkedin"></i>
+            </a>
+            <a href="https://x.com/arundada9000" target="_blank" rel="noopener" class="home__social-icon">
+              <i class="uil uil-twitter-alt"></i>
+            </a>
+            <a href="https://www.youtube.com/@arundada9000" target="_blank" rel="noopener" class="home__social-icon">
+              <i class="uil uil-youtube"></i>
             </a>
             <a href="mailto:arunneupane0000@gmail.com" target="_blank" class="home__social-icon">
               <i class="uil uil-envelope"></i>
@@ -1206,6 +1294,11 @@ c33 -19 68 -70 68 -99 0 -11 9 -28 19 -37 11 -10 24 -30 31 -46 7 -16 18 -31
           <li>
             <a href="#contact" class="footer__link">Contact</a>
           </li>
+          <li>
+            <a href="https://arunneupane.vercel.app" target="_blank" rel="noopener" class="footer__link footer__link--current">
+              <i class="uil uil-external-link-alt"></i> Current Portfolio
+            </a>
+          </li>
         </ul>
 
         <div class="footer__socials">
@@ -1215,10 +1308,19 @@ c33 -19 68 -70 68 -99 0 -11 9 -28 19 -37 11 -10 24 -30 31 -46 7 -16 18 -31
           <a href="https://www.instagram.com/arundada9000/" target="_blank" class="footer__social" rel="noopener">
             <i class="uil uil-instagram"></i>
           </a>
+          <a href="https://www.linkedin.com/in/arundada9000/" target="_blank" class="footer__social" rel="noopener">
+            <i class="uil uil-linkedin"></i>
+          </a>
+          <a href="https://x.com/arundada9000" target="_blank" class="footer__social" rel="noopener">
+            <i class="uil uil-twitter-alt"></i>
+          </a>
+          <a href="https://www.youtube.com/@arundada9000" target="_blank" class="footer__social" rel="noopener">
+            <i class="uil uil-youtube"></i>
+          </a>
           <a href="https://github.com/arundada9000" target="_blank" class="footer__social" rel="noopener">
             <i class="uil uil-github-alt"></i>
           </a>
-          <a href="https://facebook.com/arunneupane9000" target="_blank" class="footer__social" rel="noopener">
+          <a href="https://facebook.com/arundada9000" target="_blank" class="footer__social" rel="noopener">
             <i class="uil uil-facebook"></i>
           </a>
 
@@ -1226,7 +1328,7 @@ c33 -19 68 -70 68 -99 0 -11 9 -28 19 -37 11 -10 24 -30 31 -46 7 -16 18 -31
       </div>
 
       <p class="footer__copy">
-        &#169; Arun Neupane. All rights reserved
+        &#169; 2026 Arun Neupane. All rights reserved
       </p>
     </div>
   </footer>

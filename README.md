@@ -1,4 +1,4 @@
-# Arun Neupane — Portfolio (Archived)
+# Arun Neupane | Portfolio (Archived)
 
 > **This is my older portfolio**, maintained as an archive of my early work.
 > For my latest projects and updated profile, visit **[arunneupane.vercel.app](https://arunneupane.vercel.app)**.
@@ -7,7 +7,7 @@
 
 ## About
 
-Personal portfolio website showcasing projects, skills, and contact information. Built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools. Deployed on [Netlify](https://arunneupane.netlify.app).
+Personal portfolio website showcasing projects, skills, and contact information. Built with vanilla HTML, CSS, and JavaScript, no frameworks, no build tools. Deployed on [Netlify](https://arunneupane.netlify.app).
 
 ## Tech Stack
 
@@ -37,18 +37,18 @@ Personal portfolio website showcasing projects, skills, and contact information.
 
 ## Sections
 
-1. **Home** — hero with social links
-2. **About** — bio and resume download
-3. **Skills** — frontend development, languages, DSA
-4. **Qualification** — courses and projects timeline
-5. **Services** — what I offer
-6. **Portfolio** — project carousel
-7. **Testimonials** — peer reviews
-8. **Contact** — form + phone / email / location
+1. **Home**: hero with social links
+2. **About**: bio and resume download
+3. **Skills**: frontend development, languages, DSA
+4. **Qualification**: courses and projects timeline
+5. **Services**: what I offer
+6. **Portfolio**: project carousel
+7. **Testimonials**: peer reviews
+8. **Contact**: form + phone / email / location
 
 ## Getting Started
 
-This is a static site — no build step required.
+This is a static site, no build step required.
 
 ```bash
 # Clone
@@ -109,7 +109,7 @@ This repo is archived. My latest work lives at:
 
 ## License
 
-[Custom Non-Commercial Educational License](LICENSE) — free for learning and personal use. Contact for commercial licensing.
+[Custom Non-Commercial Educational License](LICENSE), free for learning and personal use. Contact for commercial licensing.
 
 ---
 

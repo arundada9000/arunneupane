@@ -1,4 +1,4 @@
-# Arun Neupane — Author Profile
+# Arun Neupane | Author Profile
 
 > Source: [arunneupane.vercel.app](https://arunneupane.vercel.app)
 
@@ -57,10 +57,10 @@ Self-taught developer from Butwal, Lumbini, Nepal. In 2023 opened first HTML cou
 
 | Qualification | Institution | Date |
 |---------------|-------------|------|
-| BSc. CSIT — 5th semester | Bhairahawa Multiple Campus | Ongoing |
+| BSc. CSIT | Bhairahawa Multiple Campus | Completed |
 | The Complete HTML and CSS Course | Bro Code | Jan 2023 |
 | JavaScript Course: From 0 to Expert | Bro Code | Feb 2023 |
-| React — The Complete Guide | Dave Gray | Apr 2024 |
+| React: The Complete Guide | Dave Gray | Apr 2024 |
 
 ---
 

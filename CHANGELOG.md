@@ -6,13 +6,25 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 - Empty `for` attribute on the contact form Message label (now points to `User-message`)
-- Scroll-spy crash when scrolling through sections without a nav link (`qualification`, `project`, `testimonial`) — query results are now null-guarded
+- Scroll-spy crash when scrolling through sections without a nav link (`qualification`, `project`, `testimonial`); query results are now null-guarded
 - Preloader removal was delayed 4s after its fade-out; reduced to 600ms
 - Removed dead `submitButton` lookup that never matched (submit button is a `<button>`, not `<input type="submit">`)
 - Added `.gitignore` so editor-local config (`.claude/`, `.vs/`, `.vscode/`) stays out of the repo
-- "Stay & Browse" modal button was unstyled — `.button` now resets native button defaults (`border`, `font-family`, `cursor`), fixing all `<button>` elements
+- "Stay & Browse" modal button was unstyled; `.button` now resets native button defaults (`border`, `font-family`, `cursor`), fixing all `<button>` elements
 - Removed now-redundant inline `border`/`cursor` styles on the contact submit button
 - Contact form Name, Email, and Subject inputs now `required`, preventing submissions with only a message
+
+### Added
+- Dedicated 1200x630 Open Graph social card (`og-social.png`) for consistent link previews
+- `og:image:width`, `og:image:height`, `og:image:alt` meta tags
+- `twitter:site` and `twitter:image:alt` meta tags
+- JSON-LD Person updated: `worksFor` (Sajilo Digital), `affiliation` (Code for Change Rupandehi), current `jobTitle`, expanded `knowsAbout`
+- Descriptive `alt` on About image; corrected Portfolio 4 alt to "Stack Visualization"
+
+### Changed
+- Removed stale `arunneupane20` keyword; keyword list updated
+- Qualification updated to completed BSc.CSIT degree
+- Em dashes replaced across HTML and docs (style: no em dashes, no emojis)
 
 ## [2.0.0] - 2026-09-11
 

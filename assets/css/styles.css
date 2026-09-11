@@ -386,7 +386,11 @@ img {
   background-color: var(--first-color);
   color: #fff;
   padding: 1rem;
+  border: none;
   border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
   font-weight: var(--font-medium);
 }
 

@@ -1,0 +1,11 @@
+# Editor / IDE local config
+.vscode/
+.vs/
+.claude/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log

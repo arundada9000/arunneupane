@@ -134,16 +134,17 @@ function scrollActive() {
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute("id");
+    const sectionId = current.getAttribute("id");
+    const navLink = document.querySelector(
+      ".nav__menu a[href*=" + sectionId + "]"
+    );
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.add("active-link");
-    } else {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
+    if (navLink) {
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        navLink.classList.add("active-link");
+      } else {
+        navLink.classList.remove("active-link");
+      }
     }
   });
 }
@@ -213,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
       preloader.style.opacity = "0";
       setTimeout(() => {
         preloader.remove();
-      }, 4000);
+      }, 600);
     }
   }, timeoutDuration);
 
@@ -261,7 +262,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Form submission
 const form = document.querySelector("form");
-const submitButton = form.querySelector('input[type="submit"]');
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();

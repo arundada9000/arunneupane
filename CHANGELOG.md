@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.1] - 2026-09-11
+
+### Fixed
+- Empty `for` attribute on the contact form Message label (now points to `User-message`)
+- Scroll-spy crash when scrolling through sections without a nav link (`qualification`, `project`, `testimonial`) — query results are now null-guarded
+- Preloader removal was delayed 4s after its fade-out; reduced to 600ms
+- Removed dead `submitButton` lookup that never matched (submit button is a `<button>`, not `<input type="submit">`)
+- Added `.gitignore` so editor-local config (`.claude/`, `.vs/`, `.vscode/`) stays out of the repo
+
 ## [2.0.0] - 2026-09-11
 
 ### Added

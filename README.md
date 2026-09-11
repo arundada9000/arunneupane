@@ -32,8 +32,9 @@ Personal portfolio website showcasing projects, skills, and contact information.
 - Contact form with Web3Forms backend
 - Scroll-to-top button
 - Old-portfolio notice modal linking to [current portfolio](https://arunneupane.vercel.app)
-- Open Graph / Twitter Card meta tags
-- JSON-LD Person structured data for SEO
+- FAQ accordion section
+- Open Graph / Twitter Card meta tags with 1200x630 social card
+- JSON-LD Person and FAQPage structured data for SEO
 
 ## Sections
 
@@ -44,7 +45,8 @@ Personal portfolio website showcasing projects, skills, and contact information.
 5. **Services**: what I offer
 6. **Portfolio**: project carousel
 7. **Testimonials**: peer reviews
-8. **Contact**: form + phone / email / location
+8. **FAQ**: frequently asked questions accordion
+9. **Contact**: form + phone / email / location
 
 ## Getting Started
 

@@ -49,6 +49,26 @@ skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
 
+// FAQ ACCORDION
+const faqContent = document.getElementsByClassName("faq__content"),
+  faqHeader = document.querySelectorAll(".faq__header");
+
+function toggleFaq() {
+  let itemClass = this.parentNode.className;
+
+  for (let i = 0; i < faqContent.length; i++) {
+    faqContent[i].className = "faq__content faq__close";
+  }
+
+  if (itemClass === "faq__content faq__close") {
+    this.parentNode.className = "faq__content faq__open";
+  }
+}
+
+faqHeader.forEach((el) => {
+  el.addEventListener("click", toggleFaq);
+});
+
 // QUALIFICATION TABS
 const tabs = document.querySelectorAll("[data-target]"),
   tabContent = document.querySelectorAll("[data-content]");

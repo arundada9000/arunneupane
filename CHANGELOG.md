@@ -25,6 +25,7 @@ All notable changes to this project will be documented in this file.
 - Removed stale `arunneupane20` keyword; keyword list updated
 - Qualification updated to completed BSc.CSIT degree
 - Em dashes replaced across HTML and docs (style: no em dashes, no emojis)
+- Completed BSc.CSIT updated in qualification section and AUTHOR.md
 
 ## [2.0.0] - 2026-09-11
 
